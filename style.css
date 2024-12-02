@@ -1,0 +1,106 @@
+/* Общие стили */
+body {
+    font-family: 'Century', Arial, sans-serif; /* Добавлен запасной шрифт */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.hat {
+    text-align: center;
+}
+
+.hat a {
+    color: rgb(0, 0, 0);
+    margin: 0 80px;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block; /* Для корректного масштабирования */
+    transition: transform 0.3s ease; /* Плавный переход для масштаба */
+}
+
+.hat a:hover {
+    transform: scale(1.2); /* Увеличение без смещения */
+}
+
+main {
+    margin-top: 40px;
+}
+
+.main_quote {
+    text-align: center;
+}
+
+.main_text {
+    font-family: century;
+    font-size: 50px;
+}
+
+.main_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image_container {
+    width: 1800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#current_item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+#current_item:hover {
+    transform: scale(1.3);
+}
+
+.gallery_arrow {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+    margin: 0 10px; /* Отступы от изображения */
+}
+
+.gallery_arrow:hover {
+    background-color: #101111;
+}
+
+.about_our_project {
+    text-align: center;
+}
+
+.about_our_project h1 {
+    font-size: 80px; /* Указан корректный размер шрифта */
+    margin-bottom: 50px;
+}
+
+.about_our_project p {
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
